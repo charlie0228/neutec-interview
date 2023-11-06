@@ -32,9 +32,21 @@
     </div>
 
     <div class="container">
-      Method 3 (to right bottom):
+      加分題 1:
       <button ref="startBtn" @click="clickStartThreeHandler">Start</button>
       <button ref="resetBtn" @click="clickResetHandler">Reset</button>
+    </div>
+
+    <div class="container">
+      加分題 2: <br>
+      <br>
+      支援 100 顆球的規劃上，我會使用 JS 進行位置的定位與移動的管理，就不會使用目前直接透過 CSS 進行動畫的設定。<br>
+      <br>
+      透過 JS 設計一套專門控制動畫的定位與移動的 Class，統一進行狀態管理，最後再調整。<br>
+      <br>
+      例如一個 array object 來記錄每顆球的原始位置，位移後的位置，以及球的移動 function，<br>
+      <br>
+      然後透過 vue 去 execute 這些 function，讓 vue 只需要控制開關，其他動畫都由 Class 來處理。
     </div>
   </div>
 </template>
