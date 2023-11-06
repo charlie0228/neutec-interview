@@ -1,22 +1,26 @@
 <template>
   <div>
     <div class="container">
-      <div class="ball"></div>
-      <div class="ball"></div>
-      <div class="ball"></div>
-      <div class="ball"></div>
+      <div class="ballContainer">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+      </div>
 
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+      <div class="blockContainer">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
 
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
 
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+      </div>
     </div>
 
     <div class="container">
@@ -100,13 +104,16 @@ $gap: 12px;
 }
 
 .container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
   width: 640px;
   margin: 12px;
-  gap: $gap;
+
+  .ballContainer, .blockContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: $gap;
+  }
 
   .block {
     position: relative;
